@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color:#F4F4F4">
+<html lang="en" class="bg-[#F4F4F4] scroll-smooth">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tom Byrne Artist | Oil Portrait Commissions in Greystones, Wicklow &amp; Dublin</title>
 <meta name="description" content="Commission an original oil portrait, abstract landscape or architectural cityscape from Tom Byrne in Greystones, County Wicklow. Book a private studio viewing or call +353 87 646 5753.">
 <meta name="theme-color" content="#F4F4F4">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config={theme:{extend:{colors:{canvas:'#F4F4F4',charcoal:'#1C1C1C',lapis:'#0F2C59',fineCharcoal:'#1C1C1C',studioGray:'#F4F4F4',luminousLapis:'#0F2C59'},fontFamily:{display:['Georgia','"Times New Roman"','serif'],sans:['system-ui','-apple-system','"Segoe UI"','Roboto','Arial','sans-serif']}}}}
+</script>
 <style>
-  html{background-color:#F4F4F4;scroll-behavior:smooth}
-  body{background-color:#F4F4F4;margin:0}
-  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
   :focus-visible{outline:3px solid #0F2C59;outline-offset:3px}
   #quote :focus-visible{outline-color:#fff}
   select option{background:#0F2C59;color:#fff}
   ::placeholder{color:rgba(255,255,255,.6)}
 </style>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config={theme:{extend:{colors:{canvas:'#F4F4F4',charcoal:'#1C1C1C',lapis:'#0F2C59'},fontFamily:{display:['Georgia','"Times New Roman"','serif'],sans:['system-ui','-apple-system','"Segoe UI"','Roboto','Arial','sans-serif']}}}}
-</script>
 </head>
 <body class="font-sans text-charcoal bg-canvas antialiased pb-24 md:pb-0">
 
@@ -26,11 +23,14 @@
 
 <header class="sticky top-0 z-50 bg-canvas/95 backdrop-blur border-b border-charcoal/10">
   <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
-    <a href="#top" class="flex items-center gap-3 min-h-[48px]" aria-label="Tom Byrne Artist home">
-      <span class="w-11 h-11 rounded-full bg-charcoal overflow-hidden flex items-center justify-center shrink-0">
-        <img src="images/logo.png" alt="Tom Byrne Artist monogram" class="w-full h-auto object-cover" width="44" height="44">
-      </span>
-      <span class="font-display text-xl font-bold">Tom Byrne Artist</span>
+    <a href="#top" aria-label="Tom Byrne Artist Home" class="flex items-center space-x-3 group min-h-[48px]">
+      <div class="h-11 w-11 flex items-center justify-center bg-white border border-fineCharcoal/5 rounded-sm overflow-hidden shadow-sm">
+        <img src="logo.jpg" alt="Tom Byrne Artist Studio Monogram Logo" class="h-full w-full object-contain">
+      </div>
+      <div class="flex flex-col leading-none">
+        <span class="font-serif tracking-widest text-base font-bold uppercase text-fineCharcoal">Tom Byrne</span>
+        <span class="text-[10px] uppercase tracking-widest text-luminousLapis font-semibold mt-0.5">Artist</span>
+      </div>
     </a>
     <nav class="hidden md:flex items-center gap-7 text-sm font-semibold" aria-label="Main">
       <a href="#collection" class="py-3 hover:text-lapis">Collection</a>
@@ -65,7 +65,7 @@
     </ul>
   </div>
   <figure class="rounded-3xl overflow-hidden shadow-2xl shadow-charcoal/20 bg-charcoal">
-    <img src="images/Samuel_Beckett_Portrait_In_Progress.jpg" alt="Oil portrait of Samuel Beckett in progress on the easel in Tom Byrne's studio" class="w-full h-auto object-cover" fetchpriority="high" width="900" height="1000">
+    <img src="Samuel_Beckett_Portrait_In_Progress.jpg" alt="Oil portrait of Samuel Beckett in progress on the easel in Tom Byrne's studio" class="w-full h-auto object-cover" fetchpriority="high" width="900" height="1000">
     <figcaption class="px-5 py-3 text-sm text-white/90 bg-charcoal">Samuel Beckett, portrait in progress</figcaption>
   </figure>
 </section>
@@ -77,19 +77,19 @@
     <p class="mt-4 text-lg text-charcoal/80 max-w-2xl">Recent commissions and collections. Every canvas is painted by hand in Greystones.</p>
     <div class="mt-10 grid sm:grid-cols-2 gap-6">
       <figure class="rounded-3xl overflow-hidden bg-canvas shadow-lg shadow-charcoal/10">
-        <img src="images/Michael_Collins_Centenary_Commemorative_Collection.jpg" alt="Michael Collins centenary commemorative oil portrait collection by Tom Byrne" class="w-full h-auto object-cover" loading="lazy" decoding="async" width="800" height="600">
-        <figcaption class="p-5"><strong class="font-display text-xl block">Michael Collins Centenary Collection</strong><span class="text-charcoal/80">A commemorative series marking the centenary.</span></figcaption>
+        <img src="Tom_Byrne_Mr_Attenborough_Portrait.jpg" alt="David Attenborough oil portrait painted by Tom Byrne" class="w-full h-auto object-cover" loading="lazy" decoding="async" width="800" height="600">
+        <figcaption class="p-5"><strong class="font-display text-xl block">David Attenborough Portrait</strong><span class="text-charcoal/80">Commemorative portrait series.</span></figcaption>
       </figure>
       <figure class="rounded-3xl overflow-hidden bg-canvas shadow-lg shadow-charcoal/10">
-        <img src="images/John_Minihan_Collecting_His_Portrait.jpg" alt="John Minihan collecting his oil portrait painted by Tom Byrne" class="w-full h-auto object-cover" loading="lazy" decoding="async" width="800" height="600">
+        <img src="John_Minihan_Collecting_His_Portrait.jpg" alt="John Minihan collecting his oil portrait painted by Tom Byrne" class="w-full h-auto object-cover" loading="lazy" decoding="async" width="800" height="600">
         <figcaption class="p-5"><strong class="font-display text-xl block">John Minihan collecting his portrait</strong><span class="text-charcoal/80">A delighted sitter on collection day.</span></figcaption>
       </figure>
       <figure class="rounded-3xl overflow-hidden bg-canvas shadow-lg shadow-charcoal/10">
-        <img src="images/Elizabeth_Banks_Portrait_Commissions.jpg" alt="Elizabeth Banks portrait commissions in oil by Tom Byrne" class="w-full h-auto object-cover" loading="lazy" decoding="async" width="800" height="600">
+        <img src="Elizabeth_Banks_Portrait_Commissions.jpg" alt="Elizabeth Banks portrait commissions in oil by Tom Byrne" class="w-full h-auto object-cover" loading="lazy" decoding="async" width="800" height="600">
         <figcaption class="p-5"><strong class="font-display text-xl block">Elizabeth Banks portrait commissions</strong><span class="text-charcoal/80">Personal commissions painted from life and photographs.</span></figcaption>
       </figure>
       <figure class="rounded-3xl overflow-hidden bg-canvas shadow-lg shadow-charcoal/10">
-        <img src="images/Samuel_Beckett_Portrait_In_Progress.jpg" alt="Samuel Beckett oil portrait shown mid-painting in the studio" class="w-full h-auto object-cover" loading="lazy" decoding="async" width="800" height="600">
+        <img src="Samuel_Beckett_Portrait_In_Progress.jpg" alt="Samuel Beckett oil portrait shown mid-painting in the studio" class="w-full h-auto object-cover" loading="lazy" decoding="async" width="800" height="600">
         <figcaption class="p-5"><strong class="font-display text-xl block">Samuel Beckett in progress</strong><span class="text-charcoal/80">See how a portrait develops layer by layer.</span></figcaption>
       </figure>
     </div>
